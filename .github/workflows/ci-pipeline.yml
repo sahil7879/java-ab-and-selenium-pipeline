@@ -17,11 +17,11 @@ jobs:
         image: selenium/standalone-chrome
         ports:
           - 4444:4444
-        options: > 
-          --health-cmd "curl -f http://localhost:4444 || exit 1" 
-          --health-interval 10s 
-          --health-timeout 5s 
-          --health-retries 3 
+        #options: > 
+        #  --health-cmd "curl -f http://localhost:4444 || exit 1" 
+        #  --health-interval 10s 
+        #  --health-timeout 5s 
+        #  --health-retries 3 
     steps:
     # Step 1: Checkout code
     - name: Checkout code
